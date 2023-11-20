@@ -1,22 +1,22 @@
-'use client';
+"use client";
 
-import { useCartContext } from '@/provider/useCartContext';
-import Image from 'next/image';
-import { useContext } from 'react';
-import { CartItemProps } from '../cart/cartItem.interface';
-import { formatNumber } from '../helpers/formatNumber';
+import { useCartContext } from "@/provider/useCartContext";
+import Image from "next/image";
+import { useContext } from "react";
+import { CartItemProps } from "../cart/cartItem.interface";
+import { formatNumber } from "../helpers/formatNumber";
 import {
   ButtonDecrease,
   ButtonIncrease,
   CartItemContainerQtd,
   CartItemContentQtd,
   CartItemName,
-  CartItemPrice,
+  CartPrice,
   CartItemQtdText,
   ContainerCartItem,
   ContentCartItem,
   RemoveItemCart,
-} from './cartItem.style';
+} from "./cartItem.style";
 
 const CartItem = ({ product }: CartItemProps) => {
   const {
@@ -45,7 +45,7 @@ const CartItem = ({ product }: CartItemProps) => {
           alt={product.name}
           width={46}
           height={57}
-          sizes='100vw'
+          sizes="100vw"
           priority
         />
 
@@ -55,20 +55,20 @@ const CartItem = ({ product }: CartItemProps) => {
           <CartItemContentQtd>
             <ButtonDecrease
               onClick={handleDecreaseProductQuantityClick}
-              data-testid='button-decrease'
+              data-testid="button-decrease"
             />
             <Image
-              src={'/pipe.svg'}
-              alt={'/pipe.svg'}
+              src={"/pipe.svg"}
+              alt={"/pipe.svg"}
               width={1}
               height={11.5}
               quality={100}
               priority
             />
-            <CartItemPrice>{product.quantity}</CartItemPrice>
+            <CartPrice>{product.quantity}</CartPrice>
             <Image
-              src={'/pipe.svg'}
-              alt={'/pipe.svg'}
+              src={"/pipe.svg"}
+              alt={"/pipe.svg"}
               width={1}
               height={11.5}
               quality={100}
@@ -76,18 +76,18 @@ const CartItem = ({ product }: CartItemProps) => {
             />
             <ButtonIncrease
               onClick={handleIncreaseProductQuantityClick}
-              data-testid='button-increase'
+              data-testid="button-increase"
             />
           </CartItemContentQtd>
         </CartItemContainerQtd>
-        <CartItemPrice>R${formatNumber(Number(product.price))}</CartItemPrice>
+        <CartPrice>R${formatNumber(Number(product.price))}</CartPrice>
         <RemoveItemCart
           onClick={handleRemoveProductClick}
-          data-testid='button-remove'
+          data-testid="button-remove"
         >
           <Image
-            src={'/ellipse.svg'}
-            alt={'/ellipse.svg'}
+            src={"/ellipse.svg"}
+            alt={"/ellipse.svg"}
             width={18}
             height={18}
             quality={100}

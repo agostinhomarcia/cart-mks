@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useCartContext } from '@/provider/useCartContext';
-import Image from 'next/image';
-import { useContext } from 'react';
-import { formatNumber } from '../helpers/formatNumber';
-import { ProductItemProps, quantity } from './productItem.interface';
+import { useCartContext } from "@/provider/useCartContext";
+import Image from "next/image";
+import { useContext } from "react";
+import { formatNumber } from "../helpers/formatNumber";
+import { ProductItemProps, quantity } from "./productItem.interface";
 import {
   ButtonPurchase,
   ContainerProduct,
@@ -12,7 +12,7 @@ import {
   ProductInfo,
   ProductName,
   ProductPrice,
-} from './productItem.style';
+} from "./productItem.style";
 
 const ProductItem = ({ product }: ProductItemProps) => {
   const { addProductToCart } = useContext(useCartContext);
@@ -44,11 +44,11 @@ const ProductItem = ({ product }: ProductItemProps) => {
         </ProductInfo>
         <ButtonPurchase
           onClick={handleAddToCartClick}
-          data-testid='button-add-cart'
+          data-testid="button-add-cart"
         >
           <Image
-            src='/shoppingBag.svg'
-            alt='/shopping-bag'
+            src="/bag.svg"
+            alt="/bag"
             width={12}
             height={13.5}
             quality={100}

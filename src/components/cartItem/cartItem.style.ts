@@ -94,7 +94,7 @@ export const CartItemContentQtd = styled.div`
   }
 `;
 
-export const CartItemPrice = styled.span`
+export const CartPrice = styled.span`
   color: #000;
   font-size: 14px;
   font-style: normal;

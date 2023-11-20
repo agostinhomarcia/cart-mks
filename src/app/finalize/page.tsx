@@ -5,6 +5,7 @@ import React from "react";
 
 import Confetti from "react-confetti";
 import { ContainerConfetti, StyledParagraph } from "./styles";
+import Image from "next/image";
 
 const Fizalize = () => {
   return (
@@ -21,7 +22,10 @@ const Fizalize = () => {
           }}
         />
       </ContainerConfetti>
-      <StyledParagraph>Parabéns Compra Finalizada</StyledParagraph>
+      <StyledParagraph>
+        Parabéns Compra Finalizada
+        <Image src="/check.svg" alt="Fizalize Logo" width={158} height={64} />
+      </StyledParagraph>
     </>
   );
 };
