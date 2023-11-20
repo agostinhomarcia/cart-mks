@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Media from '../mediaQueries/mediaQueries';
-import { ContentCartProps } from './cartItem.interface';
+import styled from "styled-components";
+import Media from "../mediaQueries/mediaQueries";
+import { ContentCartProps } from "./cartItem.interface";
 
 export const ContainerCart = styled.div`
   width: 90px;
@@ -21,7 +21,7 @@ export const CartQtd = styled.p`
 `;
 export const ContentCart = styled.div<ContentCartProps>`
   width: 486px;
-  display: ${({ $active }) => ($active ? 'flex' : 'none')};
+  display: ${({ $active }) => ($active ? "flex" : "none")};
   position: absolute;
   background-color: #0f52ba;
   height: 100vh;
@@ -89,7 +89,7 @@ export const CloseCartButton = styled.button`
   }
 
   &::before {
-    content: 'X';
+    content: "X";
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -130,7 +130,7 @@ export const CartTotalPrice = styled.div`
   `}
 `;
 
-export const ButtonFinalizePurchase = styled.button`
+export const ButtonFinalize = styled.button`
   width: 100%;
   border: none;
   background-color: #000;

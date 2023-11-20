@@ -1,12 +1,14 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useContext, useState } from 'react';
-import { useCartContext } from '../../provider/useCartContext';
-import CartItem from '../cartItem/cartItem';
-import { formatNumber } from '../helpers/formatNumber';
+import Link from "next/link";
+
+import Image from "next/image";
+import { useContext, useState } from "react";
+import { useCartContext } from "../../provider/useCartContext";
+import CartItem from "../cartItem/cartItem";
+import { formatNumber } from "../helpers/formatNumber";
 import {
-  ButtonFinalizePurchase,
+  ButtonFinalize,
   CartContentItems,
   CartHeader,
   CartQtd,
@@ -17,7 +19,7 @@ import {
   ContentCart,
   EmptyCart,
   EmptyCartText,
-} from './cart.style';
+} from "./cart.style";
 
 const Cart = () => {
   const { products, total } = useContext(useCartContext);
@@ -30,15 +32,16 @@ const Cart = () => {
   const closeCart = () => {
     isOpen && setIsOpen(false);
   };
+
   return (
     <ContainerCart
-      className={isOpen ? 'open' : 'close'}
+      className={isOpen ? "open" : "close"}
       onClick={openCart}
-      data-testid='cart-container'
+      data-testid="cart-container"
     >
       <Image
-        src='/cart.svg'
-        alt='/cart.svg'
+        src="/cart.svg"
+        alt="/cart.svg"
         width={18}
         height={18}
         quality={100}
@@ -49,10 +52,10 @@ const Cart = () => {
       <ContentCart $active={isOpen}>
         <CartHeader>
           <CartTitle>Carrinho de Compras</CartTitle>
-          <CloseCartButton onClick={closeCart} data-testid='close-cart-button'>
+          <CloseCartButton onClick={closeCart} data-testid="close-cart-button">
             <Image
-              src='/ellipse.svg'
-              alt='/ellipse.svg'
+              src="/ellipse.svg"
+              alt="/ellipse.svg"
               width={38}
               height={38}
               quality={100}
@@ -80,7 +83,11 @@ const Cart = () => {
             <p>R$ {formatNumber(Number(total))}</p>
           </CartTotalPrice>
         )}
-        <ButtonFinalizePurchase>Finalizar Compra</ButtonFinalizePurchase>
+        {products.length > 0 && (
+          <Link href="/finalize" passHref>
+            <ButtonFinalize>Finalizar Compra</ButtonFinalize>
+          </Link>
+        )}
       </ContentCart>
     </ContainerCart>
   );
