@@ -1,25 +1,110 @@
-# Teste para vaga de desenvolvedor Fron-End - Consumo de API de Produtos
+<p align="center">
+   <img src="https://media.giphy.com/media/vlteI4fV3LruBSGX3A/giphy.gif" alt="cart" width="280"/>
+</p>
 
-Este projeto consiste na resolução de um desafio que visa avaliar a capacidade de escrever código limpo, bem testado e reutilizável.  
-O objetivo é criar uma aplicação que consuma uma API REST de produtos para exibir a lista de itens da loja e permitir interações básicas com um carrinho de compras.
+<p align="right">
+   <img src="https://media.giphy.com/media/en01RjIl264egUBQIf/giphy.gif" alt="cart" width="130"/>
+</p>
 
+<h1 align="center"></h1>
 
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/agostinhomarcia/cart-mks?color=0f52ba">
 
-### Funcionalidades Requeridas
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/agostinhomarcia/cart-mks?color=0f52ba">
 
-- **Loja:**
-  - Consumir a API de produtos para exibir a lista de itens da loja.
-  - Utilizar um efeito shimmer/skeleton enquanto os dados estiverem em processo de carregamento.
+  <img alt="License" src="https://img.shields.io/github/license/agostinhomarcia/cart-mks?color=0f52ba">
 
-- **Carrinho:**
-  - Exibir todos os produtos selecionados.
-  - Permitir aumentar e diminuir a quantidade de cada item no carrinho.
-  - Permitir remover item no carrinho.
+   <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/cart-mks?color=0f52ba" />
 
-- **Responsividade:**
-  - O projeto foi desenvolvido levando em consideração a responsividade para se adaptar às telas de diversos formatos, como dispositivos móveis, tablets e desktops.
+   <img alt="Github forks" src="https://img.shields.io/github/forks/agostinhomarcia/cart-mks?color=0f52ba" />
 
+   <img alt="Github stars" src="https://img.shields.io/github/stars/agostinhomarcia/cart-mks?color=0f52ba" /> 
+</p>
 
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/agostinhomarcia" target="_blank">Author</a>&#xa0; | &#xa0
+  <a href="#" target="_blank" rel="noopener noreferrer">Projeto</a>
+</p>
+
+<br>
+
+## :dart: About
+
+<h4 align="center"> Cart MKS </h4>
+
+<p align="center">
+   <img src="/public/cart-mks.gif" alt="cart" width="690"/>
+</p>
+
+## :sparkles: Features
+
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
+
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.w3schools.com/typescript/)
+- [Styled-components](https://styled-components.com/docs/)
+- [Next.js](https://nextjs.org/)
+- [React-query](https://tanstack.com/query/v3/)
+- [Jest](https://jestjs.io/pt-BR/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting
+
+```bash
+# Clone this project
+$ git clone https://github.com/agostinhomarcia/cart-mks.git
+# Access
+$ cd cart-mks
+# Install dependencies
+$ yarn or npm
+# Run the project
+$ yarn start or npm start
+# The server will initialize in the <http://localhost:3000>
+```
+
+## :memo: License
+
+This project is under the [MIT license](./License).
+
+Made with love by [Márcia Agostinho](https://github.com/agostinhomarcia) 🚀.
+
+<p align="center">
+   <img src="https://media.giphy.com/media/lWuapZjiw4gQVHD2Ob/giphy.gif" alt="cart" width="250"/>
+</p>
+
+&#xa0;
+
+<hr/>
+
+# Integração de API de Produtos e Funcionalidades de Loja
+
+Este projeto é um desafio de desenvolvimento front-end que busca avaliar habilidades na escrita de código limpo, bem testado e reutilizável. O objetivo é criar uma aplicação que consuma uma API de produtos para exibir uma lista de itens de uma loja e permitir interações básicas com um carrinho de compras.
+
+Funcionalidades exigidas incluem a exibição da lista de produtos da loja consumindo a API, a utilização de um efeito de shimmer/skeleton durante o carregamento dos dados, e a interação com um carrinho, permitindo adicionar, remover e alterar a quantidade de itens.
+
+Aspectos técnicos englobam o uso de TypeScript, React, Jest para testes unitários, React-query para gerenciamento de estado, e Styled-components para estilização.
+
+O projeto foi desenvolvido com responsividade para se adaptar a diferentes dispositivos. Os testes unitários foram feitos utilizando Jest e testing-library. O design foi baseado no design system do Figma.
+
+O foco do desenvolvimento foi a eficiência no consumo da API, a apresentação visual consistente e a funcionalidade adequada do carrinho de compras. Estou aberto(a) a feedbacks para melhorar ainda mais a solução.
+
+<hr/>
 
 ### Testes Unitários
 
@@ -29,54 +114,10 @@ O objetivo é criar uma aplicação que consuma uma API REST de produtos para ex
 
 ### UI/UX
 
-- Utilização do design do [Figma loja - Design System](https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?mode=dev).
-
+- [Figma loja - Design System](https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?mode=dev).
 
 ### API
 
 - Utilização da API REST de produtos para exibir a lista de itens da loja.
 
-## Tecnologias utilizadas
-
-- TypeScript
-- Next
-- React-query
-- Styled-components
-- Jest
-
-## Aspectos Técnicos
-
-- Todas as ferramentas listadas são obrigatórias. Além disso, sinta-se à vontade para clonar este repositório.
-
-## Deploy
-
-- Para deploy utilizei o Vercel.  
-- [Link para Acesar o Deploy](https://mks-frontend-challenge-sable.vercel.app/)
-
-## Instruções de Execução
-
-1. **Clonagem do Repositório:**  
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-
-2. **Instalar as dependências:**  
-cd nome-do-repositorio  
-npm install
-
-3. **Desenvolvimento:**  
-npm run dev   
-
-4. **Testes Unitários:**  
-npx jest
-
-
-## Considerações Finais
-
-Ao desenvolver a solução, priorizei a utilização das ferramentas solicitadas, como TypeScript, React, Jest, React-query e Styled-components, garantindo a conformidade com as diretrizes estabelecidas.
-
-Durante a implementação da aplicação, foquei na eficiência do consumo da API REST de produtos, priorizando a apresentação da lista de produtos na loja com um efeito shimmer/skeleton durante o carregamento. Além disso, o carrinho foi desenvolvido para conter todos os produtos selecionados, oferecendo a funcionalidade de aumentar a quantidade de cada item escolhido.
-
-Os testes unitários foram escritos utilizando Jest e a testing-library, assegurando a qualidade do código e a correta execução das funcionalidades implementadas.
-
-Utilizei o Figma para consultar o design system e garantir a consistência na apresentação visual da aplicação, seguindo as orientações fornecidas.
-
-Estou aberto(a) a qualquer feedback ou sugestão para aprimorar ainda mais a solução desenvolvida.
+<a href="#top">Back to top </a>
