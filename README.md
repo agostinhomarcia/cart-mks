@@ -92,6 +92,10 @@ Made with love by [Márcia Agostinho](https://github.com/agostinhomarcia) 🚀.
 
 <hr/>
 
+### Deploy
+
+[Link Projeto](https://cart-mks.vercel.app/)
+
 # Integração de API de Produtos e Funcionalidades de Loja
 
 Este projeto é um desafio de desenvolvimento front-end que busca avaliar habilidades na escrita de código limpo, bem testado e reutilizável. O objetivo é criar uma aplicação que consuma uma API de produtos para exibir uma lista de itens de uma loja e permitir interações básicas com um carrinho de compras.
