@@ -30,7 +30,7 @@
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/agostinhomarcia" target="_blank">Author</a>&#xa0; | &#xa0
-  <a href="#" target="_blank" rel="noopener noreferrer">Projeto</a>
+  <a href="https://cart-mks.vercel.app/" target="_blank" rel="noopener noreferrer">Projeto</a>
 </p>
 
 <br>
@@ -74,7 +74,7 @@ $ cd cart-mks
 # Install dependencies
 $ yarn or npm
 # Run the project
-$ yarn start or npm start
+$ yarn run dev npm run dev
 # The server will initialize in the <http://localhost:3000>
 ```
 
