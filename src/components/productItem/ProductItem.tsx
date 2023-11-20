@@ -47,8 +47,8 @@ const ProductItem = ({ product }: ProductItemProps) => {
           data-testid="button-add-cart"
         >
           <Image
-            src="/bag.svg"
-            alt="/bag"
+            src="/shoppingBag.svg"
+            alt="/shopping-bag"
             width={12}
             height={13.5}
             quality={100}
