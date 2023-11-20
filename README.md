@@ -90,11 +90,11 @@ Made with love by [Márcia Agostinho](https://github.com/agostinhomarcia) 🚀.
 
 &#xa0;
 
-<hr/>
-
 ### Deploy
 
 [Link Projeto](https://cart-mks.vercel.app/)
+
+<hr/>
 
 # Integração de API de Produtos e Funcionalidades de Loja
 
