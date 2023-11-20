@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Media from '../mediaQueries/mediaQueries';
+import styled from "styled-components";
+import Media from "../mediaQueries/mediaQueries";
 
 export const ContainerCartItem = styled.div`
   display: flex;
@@ -38,7 +38,7 @@ export const RemoveItemCart = styled.button`
   cursor: pointer;
 
   &::before {
-    content: 'X';
+    content: "X";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -124,12 +124,12 @@ const ButtonMixStyles = styled.button`
 `;
 export const ButtonDecrease = styled(ButtonMixStyles)`
   &::before {
-    content: '-';
+    content: "-";
   }
 `;
 
 export const ButtonIncrease = styled(ButtonMixStyles)`
   &::before {
-    content: '+';
+    content: "+";
   }
 `;

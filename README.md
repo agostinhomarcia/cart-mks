@@ -106,7 +106,7 @@ Aspectos técnicos englobam o uso de TypeScript, React, Jest para testes unitár
 
 O projeto foi desenvolvido com responsividade para se adaptar a diferentes dispositivos. Os testes unitários foram feitos utilizando Jest e testing-library. O design foi baseado no design system do Figma.
 
-O foco do desenvolvimento foi a eficiência no consumo da API, a apresentação visual consistente e a funcionalidade adequada do carrinho de compras. Estou aberto(a) a feedbacks para melhorar ainda mais a solução.
+O foco do desenvolvimento foi a eficiência no consumo da API, a apresentação visual consistente e a funcionalidade adequada do carrinho de compras.
 
 <hr/>
 
